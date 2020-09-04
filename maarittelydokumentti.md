@@ -12,7 +12,7 @@ LZW -algoritmissa toteutetaan lista tietorakenne, jossa on talletettuna syöttee
 
 ## Aika -ja tilavaatimukset
 
-Alustavat tila -ja aikavaatimukset algoritmeille.
+Alustavat aika -ja tilavaatimukset algoritmeille.
 
 | algoritmi | aikavaativuus | tilavaativuus |
 | --------- | ------------- | ------------- |
