@@ -3,12 +3,22 @@
  */
 package tiedoston.tiivistys;
 
-public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+import java.io.IOException;
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+public class App {
+    public static void main(String[] args) throws IOException {
+        if (args.length == 0) {
+            System.out.println("No file provided");
+        } else {
+            String tiedostoPolku = args[0];
+            String tiedostoPaate = tiedostoPolku.split("\\.")[1];
+            if (tiedostoPaate == "huff") {
+                System.out.println(
+                        "muodostetaan alkuperäinen tiedosto tiivistetystä tiedostosta käyttäen Huffmanin algoritmia.");
+            } else {
+                Huffman hf = new Huffman(tiedostoPolku);
+                hf.kompressoi();
+            }
+        }
     }
 }
