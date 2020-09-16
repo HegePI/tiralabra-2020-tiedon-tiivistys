@@ -28,7 +28,7 @@ jobs:
       - name: send report to codecov
         env:
           token: ${{secrets.CODECOV_TOKEN}}
-        run: bash <(curl -s https://codecov.io/bash) -t token
+        run: bash <(curl -s https://codecov.io/bash) -t "$token"
 
   building:
     runs-on: ubuntu-latest
