@@ -41,7 +41,7 @@ jobs:
         run: ./gradlew jacocoTestReport
 
   codeCoverage:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: test
 
     steps:
