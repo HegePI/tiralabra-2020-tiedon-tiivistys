@@ -45,7 +45,8 @@ jobs:
     needs: test
 
     steps:
+      - uses: actions/checkout@v2
       - name: send coverage to codecov
-        with:
+        env:
           token: ${{secrets.CODECOV_TOKEN}}
         run: bash <(curl -s https://codecov.io/bash) -t token
