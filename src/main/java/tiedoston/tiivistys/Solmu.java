@@ -3,7 +3,7 @@ package tiedoston.tiivistys;
 public class Solmu implements Comparable<Solmu> {
 
     String merkki;
-    Integer arvo;
+    int arvo;
     Solmu vasenSolmu;
     Solmu oikeaSolmu;
 
@@ -27,13 +27,13 @@ public class Solmu implements Comparable<Solmu> {
      * 
      * @param arvo Solmun arvo
      */
-    public Solmu(Integer arvo, Solmu oikeaSolmu, Solmu vasenSolmu) {
-        this.arvo = arvo;
+    public Solmu(Solmu oikeaSolmu, Solmu vasenSolmu) {
+        this.arvo = oikeaSolmu.getArvo() + vasenSolmu.getArvo();
         this.oikeaSolmu = oikeaSolmu;
         this.vasenSolmu = vasenSolmu;
     }
 
-    Integer getArvo() {
+    int getArvo() {
         return this.arvo;
     }
 

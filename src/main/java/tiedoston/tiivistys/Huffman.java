@@ -94,7 +94,7 @@ public class Huffman {
         while (solmut.size() > 1) {
             Solmu eka = solmut.poll();
             Solmu toka = solmut.poll();
-            solmut.add(new Solmu(eka.getArvo() + toka.getArvo(), eka, toka));
+            solmut.add(new Solmu(eka, toka));
         }
     }
 
