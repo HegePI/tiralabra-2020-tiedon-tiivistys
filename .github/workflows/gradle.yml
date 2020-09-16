@@ -37,6 +37,7 @@ jobs:
         run: chmod +x gradlew
       - name: Test with Gradle
         run: ./gradlew test
+      - name: Generate test report
         run: ./gradlew jacocoTestReport
 
   codeCoverage:
