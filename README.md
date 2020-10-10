@@ -1,5 +1,7 @@
 # Tiralabra 2020, kompressio algoritmit
 
+# Kurssi keskeytetty, tehdään toisessa periodissa
+
 ## Määrittelydokumentti
 
 [Määrittelydokumentti](https://github.com/HegePI/tiralabra-2020-tiedon-tiivistys/blob/master/maarittelydokumentti.md)
